@@ -7,10 +7,6 @@
 - 具备了代码高亮、权限管理、第三方 `github` 登录、评论与通知、以及邮件通知功能的个人博客...
 - 具备文件导入导出功能，假如你之前用 `hexo` 博客, 那么你可以直接通过导入 `md` 文件迁移你的文章。
 
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
-
 ### 实现功能
 
 - [x] 前台：主页 + 列表页 + 搜索页 + 分类页 + 标签页
@@ -35,16 +31,6 @@
   - `jwt` + `bcrypt`
   - `nodemailer`
   - `koa-send` `archiver`
-
-## 博客预览
-
-### pc 端
-
-![](https://user-gold-cdn.xitu.io/2019/10/14/16dc944b4cdc4409?w=1908&h=1056&f=png&s=385734)
-
-### 移动端
-
-![](https://user-gold-cdn.xitu.io/2019/9/20/16d4df6fb00c0abf?w=370&h=789&f=png&s=144230)
 
 ## 项目结构
 
@@ -84,8 +70,6 @@
 ```
 
 ### 数据库模型
-
-![](https://user-gold-cdn.xitu.io/2019/9/20/16d4e0f97411e6cb?w=660&h=655&f=png&s=340072)
 
 role === 1: 博主用户
 role === 2: 普通用户
@@ -164,12 +148,12 @@ import MyInfo from '@/views/web/about/MyInfo'
 export const API_BASE_URL = 'http://127.0.0.1:6060'
 
 // project config
-export const HEADER_BLOG_NAME = '郭大大的博客' // header title 显示的名字
+export const HEADER_BLOG_NAME = '' // header title 显示的名字
 
 // === sidebar
 export const SIDEBAR = {
   avatar: require('@/assets/images/avatar.jpeg'), // 侧边栏头像
-  title: '郭大大', // 标题
+  title: '', // 标题
   subTitle: '前端打杂人员，略微代码洁癖', // 子标题
   // 个人主页
   homepages: {
@@ -224,7 +208,7 @@ const config = {
         pass: '123456' // generated ethereal password 授权码 而非 密码
       }
     },
-    subject: '郭大大的博客 - 您的评论获得新的回复！', // 主题
+    subject: '您的评论获得新的回复！', // 主题
     text: '您的评论获得新的回复！',
     WEB_HOST: 'http://127.0.0.1:3000' // email callback url
   },
@@ -295,7 +279,7 @@ module.exports = config
 ## 使用这个项目
 
 ```bash
-git clone https://github.com/gershonv/react-blog.git
+git clone 
 
 ## 安装依赖以及开启开发模式
 cd react-blog
@@ -342,6 +326,3 @@ tags:
 
 如果导入标题一样的文件，可以确认是否覆盖原来的文章！
 
-由于太多小伙伴私聊 QQ，故本人建了个群方便交流技术答疑源码，无商业用途，感兴趣的伙伴可以加群 855655742。请勿广告，谢谢。
-
-PS : 觉得不错的伙伴可以给个 star ~~~ 或者 fork 下来看看哦。如果有什么建议，也可以提 issue 哦
